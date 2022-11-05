@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: white;">Información Familia</title>
+</head>
+<body style="background-color: black ;">
+    <h1 style="color:white;text-align:center">Información de Familiares</h1>
+    {% for objeto in objetos %}
+        <p style="color:white;">----------------------------------------------------</p>
+        <p style="color: blue;">Nombre: {{objeto.nombre}} </p>
+        <p style="color: blue;">Fecha de Nacimiento: {{objeto.fecha_nacimiento}} </p>
+        <p style="color: blue;">Edad: {{objeto.edad}} </p>
+
+    {%endfor%}    
+</body>
+</html>
