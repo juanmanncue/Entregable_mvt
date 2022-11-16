@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block codigoDinamico %}
+
+    <html>
+    <body>
+
+    <h2>Nuevo Viajero</h2>
+
+    <p>Complete los datos del Viajero:</p>
+
+    <form action="" method="post"> {% csrf_token %}
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="fname">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="fname">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        
+        <button type="submit" value="Registrar">Registrar</button><br>
+    </form>
+    </body>
+    </html>
+{% endblock %}    
